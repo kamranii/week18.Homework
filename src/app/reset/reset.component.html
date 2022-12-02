@@ -1,0 +1,4 @@
+<label for="anyInput">Enter any input</label>
+<input type="text" class="form-control mt-2" id="anyInput" [(ngModel)]="anyInput">
+<p>{{anyInput}}</p>
+<button type="button" class="btn btn-primary" (click)="resetText()" [disabled]="anyInput == ''">Reset text</button>

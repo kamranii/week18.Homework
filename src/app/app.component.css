@@ -1,0 +1,18 @@
+div p {
+    padding: 1rem;
+}
+#studentName{
+    background-color: #00b5e2;
+    color: white;
+    font-size: 1.5rem;
+}
+#studentSurnaame{
+    background-color: #ef3340;
+    color: white;
+    font-size: 1.3rem;
+}
+#studentAge{
+    background-color: #509e2f;
+    color: white;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,27 @@
+<div class="container mt-3">
+    <div class="row">
+        <h3>1. Eventbinding Task</h3>
+    </div>
+    <app-game-control (scoreUpdated) = "addScore($event)"></app-game-control>
+    <div class="row" *ngFor="let score of scores">
+        <div class="col-3">
+            <app-odd *ngIf="score%2!=0" [oddScore] = "score"></app-odd>
+        </div>
+        <div class="col-3">
+            <app-even *ngIf="score%2==0" [evenScore] = 'score'></app-even>
+        </div>
+    </div>
+</div><hr>
+<div class="container mt-5">
+    <h3>2. Two-way data binding task</h3>
+    <app-reset></app-reset>
+</div><hr>
+<div class="container mt-4">
+    <h3>3. Filter Students</h3>
+    <app-student (studentCreated) = "addStudent($event)"></app-student><hr>
+    <div class="row mt-4" *ngFor="let student of students">
+        <p id="studentName">Name is <strong>{{student.name}}</strong></p>
+        <p id="studentSurnaame">Surname is <strong>{{student.surname}}</strong> </p>
+        <p id="studentAge">Age is <strong>{{student.age}}</strong></p>
+    </div>
+</div>

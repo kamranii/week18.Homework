@@ -1,0 +1,10 @@
+<form action="">
+    <label for="name" class="mt-2">Student Name:</label>
+    <input type="text" name="name" id="name" class="form-control" [(ngModel)]="name">
+    <label for="surname" class="mt-2">Student Surname:</label>
+    <input type="text" name="surname" id="surname" class="form-control" [(ngModel)]="surname">
+    <label for="age" class="mt-2">Student Age:</label>
+    <input type="number" name="age" id="age" class="form-control" [(ngModel)]="age">
+    <button type="button" class="btn btn-primary mt-2" (click)="createStudent(name, surname, age)">Add student</button>
+
+</form>
